@@ -175,3 +175,6 @@ WHERE NOT (age > 25 OR city = 'Delhi');
 SELECT *
 FROM users
 WHERE age <= 25 AND city <> 'Delhi';
+
+
+

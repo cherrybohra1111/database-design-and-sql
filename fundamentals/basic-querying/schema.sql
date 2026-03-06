@@ -7,8 +7,9 @@ CREATE TABLE users (
 );
 
 CREATE TABLE orders (
-    order_id INT,
+    order_id INT PRIMARY KEY,
     user_id INT,
     amount DECIMAL(10,2),
-    order_date DATE
+    order_date DATE,
+    FOREIGN KEY (user_id) REFERENCES user(id)
 );
